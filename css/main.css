@@ -1,0 +1,238 @@
+@font-face {
+    font-family: 'Museo_Slab_500italic';
+    src: url(../fonts/Museo_Slab_500italic-webfont.woff2) format('woff2'),
+         url(../fonts/Museo_Slab_500italic-webfont.woff) format('woff');
+}
+
+@font-face {
+    font-family: 'Museo_Slab_500_2';
+    src: url(../fonts/Museo_Slab_500_2-webfont.woff2) format('woff2'),
+         url(../fonts/Museo_Slab_500_2-webfont.woff) format('woff');
+}
+
+@import url('https://fonts.googleapis.com/css?family=Cardo:400,700');
+
+/******General******/
+
+p { color: rgba(16, 11, 0, 0.65);
+    font-family: 'Lora';
+    font-size: 1.5em;
+    line-height: 1.5em;
+    font-weight: 400;
+ }
+
+ h2{color: rgb(65, 103, 136);
+   font-family: 'Museo_Slab_500_2';
+   font-size: 2.75em;}
+
+ h3{color: rgba(16, 11, 0, 0.65);
+   font-family: 'Source Sans Pro', sans-serif;
+   font-size: 2.25em;
+    font-weight: 300;
+    }
+
+    a{color: inherit;
+      text-decoration: none;
+    }
+
+
+#about, #skills, #work, #contact{
+  height: 100%;
+  padding:5%;
+}
+
+header, #skills, #contact{
+  background: rgba(65, 103, 136, 0.2);
+}
+
+/***Grid***/
+.full-width{
+  width:100%;
+}
+
+.half-width{
+  width:47%;
+}
+
+.third-width{
+  width:33.33%;
+}
+
+.sixth-width{
+  width: 16.66;
+}
+.eighth-width{
+  width:12.5%;
+}
+
+/*****Images*****/
+
+#skills img{width:100%}
+#work img {width:90%}
+#contact img {width:50%;}
+
+/***Header***/
+
+header{
+  color: rgba(47, 62, 70, 0.75);
+  padding: 0 5%;
+  height: 100%;
+}
+
+header .full-width{
+  clear: both;
+}
+header .half-width{
+  float:left;
+}
+
+header h1{
+  font-family: 'Museo_Slab_500_2';
+  font-size: 3.5em;
+  color: rgb(65, 103, 136);
+}
+
+header p{clear: both;
+  color: rgba(47, 62, 70, 0.75);
+  font-size: 2.5em;
+  font-family: 'Source Sans Pro';
+  font-weight: 300;
+  padding-bottom: 5%;
+  width:47%;
+}
+
+nav{
+  padding-top:20%;
+  padding-bottom: 10%;
+  text-align: right;
+}
+
+nav ul li{
+  display: inline-block;
+  padding-left: 5%;
+}
+
+li a{
+  color: rgb(65, 103, 136);
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 1.75em;
+  font-variant:normal;
+  font-weight: 300;
+  text-decoration: none;
+  text-transform: lowercase;
+}
+
+/***Body***/
+
+#about .full-width{
+  width:60%;
+}
+
+/***Skills***/
+
+#skills .full-width{
+  overflow: auto;
+}
+
+#skills .sixth-width{
+  float:left;
+  padding-right:3.5%;
+  text-align: center;
+  width: 13%;}
+
+#skills img {
+   padding-bottom:10%;
+}
+#skills p {
+  font-family: 'Source Sans Pro';
+  font-size: 1.2em;
+  font-weight: 300;
+  line-height: 1.2em;
+  padding-bottom: 25%;}
+}
+
+/***Work***/
+#work {
+clear: both;
+}
+
+#work .full-width{
+  text-align: left;
+}
+
+#work .third-width{
+  float: left;
+  padding-right:3%;
+  text-align: left;
+  width: 30%;
+}
+
+#work p {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 1.25em;
+  font-weight: 300;
+  line-height: 1.25em;
+  padding-bottom: 25%;}
+
+  #work p strong{
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 1em;
+    font-weight: 400;
+    line-height: 1.3em;
+    padding-bottom: 25%;}
+
+
+/***Footer***/
+#contact {
+  clear: both;
+  padding-bottom: 5%;
+}
+
+#contact .full-width{
+  overflow: auto;
+}
+
+#contact .half-width{
+  float: left;
+  padding-right: 3%;
+
+}
+#contact .main-contact{
+  display: block;
+  font-family: 'Source Sans Pro';
+  font-size: 1.75em;
+  font-weight: 300;
+}
+
+#contact .main-contact h3 {
+  font-size: 1.5em;
+  vertical-align: text-top;
+}
+
+#contact .main-contact img {
+  width: 6%;
+  float: left;
+  padding-right: 1em;
+  padding-top: .4em;
+
+}
+
+#contact h2 a{
+  color: rgb(65, 103, 136);
+  text-decoration: none;
+}
+#contact a{
+  color: rgba(16, 11, 0, 0.65);
+  text-decoration: none;
+}
+
+.secondary-contact{
+  padding-left: 30%;
+}
+
+.eighth-width{
+  display: grid;
+  grid-template-columns: 150% 150% 150% 150%;
+  grid-template-rows: 100% 100% ;
+  grid-gap: 1rem;
+}
